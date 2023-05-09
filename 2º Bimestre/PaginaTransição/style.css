@@ -1,0 +1,36 @@
+.titulo {
+   text-align: center;
+   font-size: 300%;
+   background: rgb(255,0,0);
+   background: linear-gradient(90deg, rgba(255,0,0,1) 4%, rgba(18,57,186,1) 100%); 
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color:transparent;   
+}
+.titulo:hover{    
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);   
+
+}
+
+.imagem1{
+    display: inline;
+    float: left;
+}
+
+.imagem2{
+    display: inline;
+    float: right;
+}
+
+.tabela{
+    display: absolute;   
+    margin: 0 auto;
+    width: 30%;
+}
+th{
+    size: 10%;
+}
+
