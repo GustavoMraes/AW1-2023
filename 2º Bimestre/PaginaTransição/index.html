@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <title> VCT AMERICAS 2023 </title>
 </head>
-
+<body>
     <header>
 
         <strong> <p class = "titulo"> CLASSIFICAÇÃO DOS TIMES VCT AMERICAS SEMANA 7</p> </strong>
     </header>
      <main>
 
-        <br>       
+          
+        <p class="texto"> Dados sobre os times na sétima semana do campeonato VCT Americas 2023 (clique)</p>   
         
 
         <img 
@@ -29,7 +30,8 @@
         alt = "deu erro"        
          >
 
-
+        <br><br><br>
+        <br><br><br>
 
          <table class="tabela">
             <thead> 
@@ -39,18 +41,209 @@
                     </th>
                     <th>
                         Classificação
-                    </th>
-
+                    </th>                    
                 </tr>
             </thead>
+            <tbody>
+                <tr class="loud">
+                    <td>
+                        Loud
+                    </td>
+                    <td>
+                        7-0
+                    </td>                  
+                </tr>
+
+                <tr class="cloud9">
+                    <td>
+                        Cloud9
+                    </td>
+                    <td>
+                        6-1
+                    </td>
+                </tr>
+
+                <tr class = "furia">
+                    <td>
+                        Furia
+                    </td>
+                    <td>
+                        4-3
+                    </td>
+                </tr>
+
+                <tr class="NRG">
+                    <td>
+                        NRG
+                    </td>
+                    <td>
+                        4-3
+                    </td>
+                </tr>
+
+                <tr class="leviatán">
+                    <td>
+                        Leviatán
+                    </td>
+                    <td>
+                        4-3
+                    </td>
+                </tr>
+
+                <tr class="hundredT">
+                    <td>
+                        100Thives
+                    </td>
+                    <td>
+                        3-4
+                    </td>
+                </tr>
+
+                <tr class="eg">
+                    <td>
+                        Evil Geniuses
+                    </td>
+                    <td>
+                        3-4
+                    </td>
+                </tr>
+
+                <tr class="sentinels">
+                    <td>
+                        Sentinels
+                    </td>
+                    <td>
+                        2-5
+                    </td>
+                </tr>
+
+                <tr class="MIBR">
+                    <td>
+                        MIBR
+                    </td>
+                    <td>
+                        2-5
+                    </td>
+                </tr>
+
+                <tr class="KRU">
+                    <td>
+                        KRU
+                    </td>
+                    <td>
+                        0-7
+                    </td>
+                </tr>
+            </tbody>            
          </table>
+        <br><br>
+         <p> Estes times estão participando do campeonato internacional de Valorant Americas. Caso você queira inscrever seu time, preencha o formulário abaixo. Note que todos os jogadores do time precisam ter uma classificação "<span class="imortal">imortal</span>" ou superior em sua conta no jogo. </p>
+         <p class="titulo2"> Formulário para participar do VCT</p>
+         <form>
+            <fieldset>
+                <legend class="sobre"> Sobre seu time</legend>
+                <label for="nomeDoTime"> Digite o nome do seu time </label>
+                <input
+                type="text"
+                id="nomeDoTime"
+                name="nomeDoTime">
+                <br><br>
 
+                <label for="abreviaçãoDoTime"> Abreviação do time (até 4 caracteres) </label>
+                <input
+                type="text"
+                id="abreviaçãoDoTime"
+                name="abreviaçãoDoTime">
+                <br><br>
 
+                <label for="corDoTime"> Selecione qual será a cor base do seu time </label>
+                <select name="corDoTime" id="corDoTime">
+                    <option value="cor"> Selecione uma opção </option> 
+                    <option value="cor"> Amarelo </option> 
+                    <option value="cor"> Verde </option> 
+                    <option value="cor"> Vermelho </option>  
+                    <option value="cor"> Azul </option> 
+                    <option value="cor"> Roxo </option> 
+                    <option value="cor"> Rosa </option> 
+                    <option value="cor"> Preto </option> 
+                    <option value="cor"> Branco </option> 
+                    <option value="cor"> Marrom </option>                       
+                </select>        
+            </fieldset>
+            <fieldset>
+                <legend class="inscriçao"> Inscrição do time </legend>
+                <label for="jogador1"> Jogador 1 </label>
+                <input
+                type="text"
+                id="jogador1"
+                name="jogador1">
+                
+                <label for="jogador2"> Jogador 2 </label>
+                <input
+                type="text"
+                id="jogador2"
+                name="jogador2">
+                
 
+                <label for="jogador3"> Jogador 3 </label>
+                <input
+                type="text"
+                id="jogador3"
+                name="jogador3">
+                
 
-        </main>
-    
-<body>
+                <label for="jogador4"> Jogador 4 </label>
+                <input
+                type="text"
+                id="jogador4"
+                name="jogador4">
+                
+
+                <label for="jogador5"> Jogador 5 </label>
+                <input
+                type="text"
+                id="jogador5"
+                name="jogador5">
+                <br><br>
+                
+                <div class="divisão">
+
+                    <label for="coachDoTime"> Coach do time: </label>
+                    <input
+                    type="text"
+                    id="coachDoTime"
+                    name="coachDoTime">
+                    
+                    <label for="jogadorReserva"> Jogador reserva: </label>
+                    <input
+                    type="text"
+                    id="jogadorReserva"
+                    name="jogadorReserva">
+                 </div>
+            </fieldset>
+            <fieldset>
+                <legend class="contato"> Contato </legend>
+
+                <div class="divisão">
+                    <label for="email"> Email para contato: </label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email">
+
+                    <label for="telefone"> Telefone profissional: </label>
+                    <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone">
+                </div>
+            </fieldset>
+            <label for="ck"> Aceita os termos: </label>
+            <input type= "checkbox" name = "ck" id ="ck">    
+            <br><br>          
+            <button type = "submit" class="botaoEnviar"> Enviar </button>
+         </form>
+        </main>    
     
 </body>
 </html>

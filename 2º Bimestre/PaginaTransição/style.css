@@ -1,36 +1,207 @@
 .titulo {
+    text-align: center;
+    font-size: 250%;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 4%, rgba(18,57,186,1) 100%); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color:transparent;   
+ }
+ .titulo:hover{    
+         -webkit-transform: scale(1.3);
+         -ms-transform: scale(1.3);
+         transform: scale(1.3);   
+ }
+ .texto{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;    
+ }
+ .texto:active{
+    transform: scale(2);
+ }
+ 
+ .imagem1{
+     display: inline;
+     float: left;
+     transform: rotate(10deg);
+ }
+ 
+ .imagem2{
+     display: inline;
+     float: right;
+     transform: rotate(-10deg);
+ }
+ 
+ .tabela{
+     display: absolute;   
+     margin: 0 auto;
+     width: 30%;
+     border-collapse: collapse;
+     border: 1px solid black;
+ }
+ th{
+    font-size: 25px;  
+    border: 1px solid black;  
+ }
+ td{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold
+ }
+ .loud{
+    color: rgb(22, 190, 22);
+ }
+ .loud:hover{
+    background-image: url(https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+ .cloud9{
+    color: rgb(0, 174, 255);
+ }
+ .cloud9:hover{
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg);
+    background-size: 100%; 
+    background-position-y: 19%;
+      
+}
+ .furia{
+    color: rgb(0, 0, 0);
+ }
+ .furia:hover{
+    background-image: url(https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+ .NRG{
+    color: rgb(133, 141, 156);
+ }
+ .NRG:hover{
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg);
+    background-size: 100%; 
+    background-position-y: 19%;
+      
+}
+
+ .leviatán{
+    color: rgb(2, 92, 134);
+ }
+ .leviatán:hover{
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/2431835-ilustracaoial-da-bandeira-do-chile-gratis-vetor.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+ .hundredT{
+    color: rgb(201, 30, 30);
+ }
+ .hundredT:hover{
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg);
+    background-size: 100%; 
+    background-position-y: 19%;
+      
+}
+ .eg{
+    color: rgb(77, 120, 139);
+ }
+ .eg:hover{
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg);
+    background-size: 100%; 
+    background-position-y: 19%;
+      
+}
+ .sentinels{
+    color: rgb(255, 0, 0);
+ }
+ .sentinels:hover{
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg);
+    background-size: 100%; 
+    background-position-y: 19%;
+      
+}
+ .MIBR{
+    color: rgb(140, 170, 184);
+ }
+ .MIBR:hover{
+    background-image: url(https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+ .KRU{
+    color: rgb(250, 65, 219);
+ }
+ .KRU:hover{
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/2431835-ilustracaoial-da-bandeira-do-chile-gratis-vetor.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+.titulo2{
    text-align: center;
-   font-size: 300%;
-   background: rgb(255,0,0);
-   background: linear-gradient(90deg, rgba(255,0,0,1) 4%, rgba(18,57,186,1) 100%); 
+    font-size: 150%;
+    background: rgb(203,7,21);
+    background: linear-gradient(90deg, rgba(203,7,21,1) 27%, rgba(185,21,174,1) 89%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color:transparent;  
+}
+.imortal{
+   background: rgb(188,19,21);
+background: linear-gradient(90deg, rgba(188,19,21,1) 11%, rgba(130,185,21,1) 100%);
    -webkit-background-clip: text;
    -moz-background-clip: text;
    background-clip: text;
-   color:transparent;   
+   color:transparent;  
 }
-.titulo:hover{    
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);   
-
+.divisão{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
-
-.imagem1{
-    display: inline;
-    float: left;
-}
-
-.imagem2{
-    display: inline;
-    float: right;
-}
-
-.tabela{
-    display: absolute;   
-    margin: 0 auto;
-    width: 30%;
-}
-th{
-    size: 10%;
+.sobre{
+   font-size: 130%;
+   font-weight: bold; 
+   background: rgb(173,19,188);
+background: linear-gradient(90deg, rgba(173,19,188,1) 11%, rgba(130,185,21,1) 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color:transparent;  
 }
 
+.inscriçao{
+   font-size: 130%;
+   font-weight: bold; 
+   background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color:transparent;  
+}
+
+.contato{
+   font-size: 130%;
+   font-weight: bold; 
+   background: rgb(63,251,64);
+   background: radial-gradient(circle, rgba(63,251,64,1) 0%, rgba(221,70,252,1) 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color:transparent;  
+}
+.botaoEnviar{
+   background: rgb(195,34,182);
+   background: linear-gradient(0deg, rgba(195,34,182,1) 0%, rgba(45,103,253,1) 100%); 
+   width: 10%;
+   height: 1%;
+}
+.botaoEnviar:hover{
+   transform: scale(1.3);
+}
+ 
+ 
