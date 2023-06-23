@@ -1,0 +1,87 @@
+@media screen {
+    
+    body{        
+        font-size: 16px;
+        color: white;
+        margin: 0;
+       
+    } 
+
+    header{
+        background-color: rgb(86, 109, 61);
+        padding: 0.5%;
+    }
+
+    .bloco{
+        display: flex;
+        justify-content: center;
+        
+        
+        
+    }    
+    .bloco-flex1{
+        flex: 1;
+        text-align: center;
+        margin-top: 0.5%;
+    }
+    
+    .bloco-flex2{
+        flex: 3;
+        margin-top: 2%;
+        
+    }
+
+    .icon-label{
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    
+    .opcao{
+        margin: 10px;
+        background-color: #7a7a7a;
+        color:  #ffffff;        
+        padding: 10px;
+        font-size: 16px;
+        border: none;       
+    }
+
+    
+@media screen and (max-width: 600px) {
+
+    .bloco{
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+    .bloco-flex1{
+        flex: 2;
+        padding: 10px;
+    }
+
+    .bloco-flex2{
+        flex: 1;
+        padding: 10px;
+    }
+
+    .icon-label{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .icon:checked ~ .bloco {
+        display: block;
+        text-align: center;
+        
+    }
+
+}
+
+
+}
