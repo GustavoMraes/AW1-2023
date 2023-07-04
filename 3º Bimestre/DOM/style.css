@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+}
+header{
+    font-size: large;
+    color: white;
+    background-color: black;
+    width: 98vw;
+    height: 10vw;  
+    padding: 1%;  
+}
+.matricula{
+    font-size: small;
+   
+    float:right;
+    
+
+}
+.titulo{
+    float: left;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reprovado {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .aprovado {
+    color: green;
+    font-weight: bold;
+  }
+
+
+
+  ul {
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .subject {
+    font-weight: bold;
+  }
+  
+  .grade {
+    margin-left: 10px;
+  }

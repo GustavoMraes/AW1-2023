@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExemploPágina</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body> 
+  
+ 
+
+    <header>
+        <h1 class="a"> Gustavo Henrique de Moraes</h1> 
+        <h3 class ="b"> Estudante no Instituto Federal de São Paulo</h3>   
+        <p class="matricula" id="pront"> SP3072037</p>  
+    </header>
+
+    <main>
+
+        <h2 id ="boletim">Boletim</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Matéria</th>  
+      <th>Nota</th>
+      <th>Situação</th>
+    </tr>
+ </thead>
+  <tbody>
+  <tr>
+    <td>Matemática</td>
+    <td>8.5</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>Português</td>
+    <td>7.8</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>AW1</td>
+    <td>9.2</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>LP3</td>
+    <td>6.9</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>LP2</td>
+    <td>8.0</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>História</td>
+    <td>7.5</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>Geografia</td>
+    <td>9.0</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>Biologia</td>
+    <td>8.7</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>Química</td>
+    <td>7.2</td>
+    <td class="aprovado">Aprovado</td>
+  </tr>
+  <tr>
+    <td>STC</td>
+    <td>5.3</td>
+    <td class="reprovado">Reprovado</td>
+  </tr>
+  <tr>
+    <td>TDS</td>
+    <td>4.8</td>
+    <td class="reprovado">Reprovado</td>
+  </tr>
+  <tr>
+    <td>TPO</td>
+    <td>5.7</td>
+    <td class="reprovado">Reprovado</td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>Top 5 Notas</h2>
+
+<ul> 
+  <li name = "aw1"><span class="subject">AW1:</span><span class="grade">9.2</span></li>
+  <li name = "geografia"><span class="subject">Geografia:</span><span class="grade">9.0</span></li>
+  <li id="Bio"><span class="subject">Biologia:</span><span class="grade">8.7</span></li>
+  <li id="Mat"><span class="subject">Matemática:</span><span class="grade">8.5</span></li>
+  <li><span class="subject">LP2:</span><span class="grade">8.0</span></li>
+</ul>
+
+
+
+      
+
+    </main>
+
+
+    <script>
+
+      /* CODIGO DO PROFESSOR
+      document.getElementsByTagName("p")[0].style.fontSize = "30px"
+      document.getElementById("para").style.fontFamily = "cursive"
+      document.getElementsByName("para")[0].style.color = "purple"
+      document.getElementsByClassName("para")[0].style.backgroundColor = "purple"
+      document.querySelector("p#para").style.backgroundColor = "red"
+      */
+
+      //Tag
+
+      document.getElementsByTagName("h1")[0].style.fontSize = "50px"
+      document.getElementsByTagName("thead")[0].style.fontSize = "30px"
+
+      //ID
+
+      document.getElementById("boletim").style.fontSize = "50px"
+      document.getElementById("pront").style.fontFamily = "cursive"
+      document.getElementById("pront").style.fontSize = "20px"
+
+      // classe 
+
+     document.getElementsByClassName("a")[0].style.color = "purple"
+     document.getElementsByClassName("b")[0].style.color = "yellow"
+
+     //nome
+
+     document.getElementsByName("aw1")[0].style.color = "blue"
+     document.getElementsByName("geografia")[0].style.color = "purple"
+
+     //selector
+
+     document.querySelector("li#Bio").style.color = "green"
+     document.querySelector("li#Mat").style.color = "brown"
+     
+    </script>
+
+</body>
+
+</html>
