@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Senha</title>
+</head>
+<body>
+    <form action="" id="Enviar" name="Enviar">
+        <fieldset>
+        
+            <label for="Senha"> Digite a Senha</label>
+            <input type="password" id="Senha" name="Senha">
+            <br><br>
+
+            <label for="ConfSenha"> Reescreva a Senha</label>
+            <input type="password" id="ConfSenha" name="ConfSenha">
+            <br><br>
+
+            <label for="Enviar">Enviar</label>
+            <input type="submit">
+
+            <p id=5></p>
+
+        </fieldset>
+    </form>
+
+    <script>
+
+        var senha = document.getElementById("Senha")
+        var confSenha = document.getElementById("ConfSenha")
+        var enviar = document.getElementById("Enviar")
+        var texto = document.getElementById(5)
+
+        enviar.onsubmit = function (e) {
+            if (senha.value != confSenha.value) {
+                texto.textContent = texto.textContent == "\nAs senhas não Coincidem" ? "\nAs senhas não Coincidem" :  texto.textContent + "\nAs senhas não Coincidem";
+                e.preventDefault();                             
+            }
+            if (senha.value.length < 8) {
+                texto.textContent = texto.textContent+ "\nA Senha precisa ter pelo menos 8 dígitos"   
+                e.preventDefault();    
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id=0>Clique</button>
+    <button id=1>Clique</button>
+
+    <div style="width: 500px; height: 500px; border: 1px solid black;"> AAA  </div>
+    <div style="width: 500px; height: 500px; border: 1px solid black;"> BBB  </div>
+    <div style="width: 500px; height: 500px; border: 1px solid black;"> CCC  </div>
+
+    <script>
+        var btn0 = document.getElementById(0)
+        var bnt1 = document.getElementById(1)
+
+       var div = document.querySelectorAll("div")
+
+        btn0.addEventListener("click", bgChange)
+
+        
+        div.forEach(ad => {
+            ad.addEventListener("click", mudaCorDiv)
+        });
+        function bgChange() {
+            var str = `rgb(${random(255)}, ${random(255)}, ${random(255)}`
+            document.body.style.backgroundColor = str;
+        }
+
+        function random(numero) {
+            return Math.floor(Math.random() * (numero + 1));
+        }
+        function mudaCorDiv(div){
+            var str = `rgb(${random(255)}, ${random(255)}, ${random(255)}`
+            div.target.style.backgroundColor = str;
+        }
+
+
+
+    </script>
+</body>
+</html>
