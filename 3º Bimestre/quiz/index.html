@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz de JavaScript</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .question {
+            display: none;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+
+        .submit-button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag {
+            display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #2ecc71;
+            color: #ffffff;
+        }
+
+        .incorrect {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de JavaScript</h1>
+
+        <div class="question">
+            
+                <p>Pergunta 1: O que é um ornintorrinco</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q1" value="Ovíparo" id="q1-1"> Onívoro</label>
+                    <label class="option"><input type="radio" name="q1" value="Planta" id="q1-2"> Planta</label>
+                    <label class="option"><input type="radio" name="q1" value="Mamífero" id="q1-3"> Mamífero</label>
+                    <label class="option"><input type="radio" name="q1" value="Fungo" id="q1-4"> Fungo</label>
+
+                </div>
+                <button class="submit-button" id="enviar1" type="submit">Enviar</button>
+                <span class="tag correct" id = "correto1">Correto!</span>
+                <span class="tag incorrect" id = "incorreto1">Incorreto.</span>
+            
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question">
+            <p> Pergunta 2: Qual é a capital da Austrália?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2"> Melbourne</label>
+                <label class="option"><input type="radio" name="q2"> Sydney</label>
+                <label class="option"><input type="radio" name="q2"> Brisbne</label>
+                <label class="option"><input type="radio" name="q2"> Canberra</label>
+            </div>
+            <button class="submit-button" id="enviar2" type="submit">Enviar</button>
+            <span class="tag correct" id = "correto2">Correto!</span>
+            <span class="tag incorrect" id = "incorreto2">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+    
+        <div class="question">
+            <p> Pergunta 3: Qual é o maior planeta do nosso sistema solar?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3"> Terra</label>
+                <label class="option"><input type="radio" name="q3"> Júpiter</label>
+                <label class="option"><input type="radio" name="q3"> Saturno</label>
+                <label class="option"><input type="radio" name="q3"> Marte</label>
+            </div>
+            <button class="submit-button" id="enviar3" type="submit">Enviar</button>
+            <span class="tag correct" id = "correto3" >Correto!</span>
+            <span class="tag incorrect" id = "incorreto3">Incorreto.</span>
+        </div>
+
+          <!-- Repita o mesmo padrão para as próximas questões -->
+    
+          <div class="question">
+            <p>  Pergunta 4: Em que ano os portugueses chegaram no Brasil</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4"> 2023</label>
+                <label class="option"><input type="radio" name="q4"> 1850</label>
+                <label class="option"><input type="radio" name="q4"> 1380</label>
+                <label class="option"><input type="radio" name="q4"> 1500</label>
+            </div>
+            <button class="submit-button" id="enviar4" type="submit">Enviar</button>
+            <span class="tag correct" id = "correto4" >Correto!</span>
+            <span class="tag incorrect" id = "incorreto4">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+    
+        <div class="question">
+            <p>  Pergunta 5: Quantos episódios a série "Cúmplices de um Resgate" possui?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5"> 155</label>
+                <label class="option"><input type="radio" name="q5"> 45</label>
+                <label class="option"><input type="radio" name="q5"> 452</label>
+                <label class="option"><input type="radio" name="q5"> 357</label>
+            </div>
+            <button class="submit-button" id="enviar5" type="submit">Enviar</button>
+            <span class="tag correct" id = "correto5" >Correto!</span>
+            <span class="tag incorrect" id = "incorreto5">Incorreto.</span>
+        </div>
+
+
+    <script>
+
+        var perguntas = document.getElementsByClassName("question")
+        perguntas[0].style.display="block"
+
+        //QUESTAO 1
+        var alternativas1 = document.getElementsByName("q1")
+        var enviar1 = document.getElementById("enviar1") 
+        var correto1 = document.getElementById("correto1") 
+        var incorreto1 = document.getElementById("incorreto1") 
+        
+
+        enviar1.onclick = function (e) {
+            if (alternativas1[2].checked){
+                correto1.style.display = "block"
+                incorreto1.style.display = "none"
+                enviar1.disabled = true
+                perguntas[1].style.display="block"
+                
+            }
+            else{
+                incorreto1.style.display = "block"
+            }
+        }
+
+        //QUESTAO 2
+        var alternativas2= document.getElementsByName("q2")
+        var enviar2= document.getElementById("enviar2") 
+        var correto2= document.getElementById("correto2") 
+        var incorreto2= document.getElementById("incorreto2") 
+
+        enviar2.onclick = function (e) {
+            if (alternativas2[1].checked){
+                correto2.style.display = "block"
+                incorreto2.style.display = "none"
+                enviar2.disabled = true
+                perguntas[2].style.display="block"
+                
+            }
+            else{
+                incorreto2.style.display = "block"
+            }
+        }
+
+        //QUESTÃO 3
+
+        var alternativas3= document.getElementsByName("q3")
+        var enviar3= document.getElementById("enviar3") 
+        var correto3= document.getElementById("correto3") 
+        var incorreto3= document.getElementById("incorreto3") 
+
+        enviar3.onclick = function (e) {
+            if (alternativas3[1].checked){
+                correto3.style.display = "block"
+                incorreto3.style.display = "none"
+                enviar3.disabled = true
+                perguntas[3].style.display="block"
+                
+            }
+            else{
+                incorreto3.style.display = "block"
+            }
+        }
+
+        //QUESTÃO 4
+
+        var alternativas4= document.getElementsByName("q4")
+        var enviar4= document.getElementById("enviar4") 
+        var correto4= document.getElementById("correto4") 
+        var incorreto4= document.getElementById("incorreto4") 
+
+        enviar4.onclick = function (e) {
+            if (alternativas4[3].checked){
+                correto4.style.display = "block"
+                incorreto4.style.display = "none"
+                enviar4.disabled = true
+                perguntas[4].style.display="block"
+                
+            }
+            else{
+                incorreto4.style.display = "block"
+            }
+        }
+
+        //QUESTÃO 5
+
+        var alternativas5= document.getElementsByName("q5")
+        var enviar5= document.getElementById("enviar5") 
+        var correto5= document.getElementById("correto5") 
+        var incorreto5= document.getElementById("incorreto5") 
+
+        enviar5.onclick = function (e) {
+            if (alternativas5[3].checked){
+                correto5.style.display = "block"
+                incorreto5.style.display = "none"
+                enviar5.disabled = true                
+            }
+            else{
+                incorreto5.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
