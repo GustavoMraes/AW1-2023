@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name = "nome" id = "nome">
+        <button type="submit">enviar</button>
+    </form>
+    <div id = "lista">
+
+    </div>
+    <script>
+        let nome = document.querySelector("#nome")
+        let form = document.querySelector("#form")
+        let div = document.querySelector("#lista")
+        from.addEventListener("submit", function(e){
+            e.preventDfault();
+            let dados = {
+                nome: nome.value
+                //CONTINUAR AQUI PELO VÍDEO NO MOODLE
+            }
+        })
+    </script>
+</body>
+</html>
